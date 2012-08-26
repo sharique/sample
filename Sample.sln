@@ -21,24 +21,41 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{20D5CB
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Tests", "Sample.Tests\Sample.Tests.csproj", "{E41E6D6D-71B9-42C7-BF06-929188862F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.ConsoleApp", "Sample.ConsoleApp\Sample.ConsoleApp.csproj", "{C3890723-F76F-4E01-9819-F799622CF818}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2B089CFA-B159-42A3-A218-C72E1DA62083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2B089CFA-B159-42A3-A218-C72E1DA62083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B089CFA-B159-42A3-A218-C72E1DA62083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B089CFA-B159-42A3-A218-C72E1DA62083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AF5C2E-DC83-46EA-B5CD-70BA402CECA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4E5BE32-C62A-4BAC-9BD8-71ADADE2BED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4E5BE32-C62A-4BAC-9BD8-71ADADE2BED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4E5BE32-C62A-4BAC-9BD8-71ADADE2BED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4E5BE32-C62A-4BAC-9BD8-71ADADE2BED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3890723-F76F-4E01-9819-F799622CF818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3890723-F76F-4E01-9819-F799622CF818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3890723-F76F-4E01-9819-F799622CF818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3890723-F76F-4E01-9819-F799622CF818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41E6D6D-71B9-42C7-BF06-929188862F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41E6D6D-71B9-42C7-BF06-929188862F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41E6D6D-71B9-42C7-BF06-929188862F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41E6D6D-71B9-42C7-BF06-929188862F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Sample.ConsoleApp\Sample.ConsoleApp.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

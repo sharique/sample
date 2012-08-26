@@ -72,7 +72,7 @@ namespace Sample.Data
             var value = from x in session.Query<Setting>()
                         where x.SettingName == keyname
                         select x.SettingValue;
-            return value.First();
+            return value.FirstOrDefault();
         }
 
         public bool SaveSetting(string settingName, string settingValue)

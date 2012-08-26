@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Sample.Data;
 
 namespace Sample.Site.Install
 {
@@ -11,7 +12,12 @@ namespace Sample.Site.Install
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
+
+		public void SaveButtonClick (object sender, EventArgs e)
+		{
+			Repository.Instance.SaveSetting("sitename",tbSitename.Text);
+			lblMsg.Text = "Settings saved.";
+		}
     }
 }

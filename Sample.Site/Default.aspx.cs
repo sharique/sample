@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Sample.Data;
 
 namespace Sample.Site
 {
@@ -11,7 +12,9 @@ namespace Sample.Site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+			if (Repository.Instance.GetSettingValue("installed")!="yes") {
+				Response.Redirect("~/Install/Install.aspx");
+			}
         }
     }
 }
