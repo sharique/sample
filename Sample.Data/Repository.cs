@@ -80,7 +80,7 @@ namespace Sample.Data
             Setting setting = (from x in session.Query<Setting>()
                                where x.SettingName == settingName
                                select x).SingleOrDefault();
-            if (setting.SettingId == 0 || setting == null)
+            if (setting == null || setting.SettingId == 0)
             {
                 setting = new Setting();
                 setting.SettingName = settingName;
