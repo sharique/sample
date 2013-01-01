@@ -5,11 +5,8 @@ using FluentNHibernate.Mapping;
 
 namespace Sample.Data
 {
-
-
     public class RoleMap : ClassMap<Role>
     {
-
         public RoleMap()
         {
             Table("Roles");

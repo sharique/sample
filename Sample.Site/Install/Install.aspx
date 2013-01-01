@@ -9,7 +9,15 @@
         <br />
         <label>Sitename</label>
         <asp:TextBox ID="tbSitename" runat="Server" CssClass="ui-state-disabled"></asp:TextBox>
+        <label>Site Slogan</label>
+        <asp:TextBox ID="tbSiteSlogan" runat="Server" CssClass="ui-state-disabled"></asp:TextBox>
         <br />
+        <label>Admin User name</label>
+        <asp:TextBox ID="tbUname" runat="Server" CssClass="ui-state-disabled"></asp:TextBox>
+        <label>Admin password</label>
+        <asp:TextBox ID="tbPass" runat="Server" CssClass="ui-state-disabled" TextMode="Password"></asp:TextBox>
+        <label>Admin Email</label>
+        <asp:TextBox ID="tbEmail" runat="Server" CssClass="ui-state-disabled" TextMode="Email"></asp:TextBox>
         <br />
         <asp:Button ID="SaveButton" runat="Server" Text="Save and Install" OnClick="SaveButtonClick" CssClass="ui-button"></asp:Button>
     </div>

@@ -1,10 +1,12 @@
 ﻿using Sample.Data;
+using Sample.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace Sample.Site.Install
 {
@@ -22,7 +24,9 @@ namespace Sample.Site.Install
         {
             var repo = Repository.Instance;
             repo.SaveSetting("installed", "no");
-            repo.SaveSetting("sitename", tbSitename.Text);
+            repo.SaveSetting("site-name", tbSitename.Text);
+            repo.SaveSetting("site-slogan", tbSiteSlogan.Text);
+            Membership.CreateUser(tbUname.Text, tbPass.Text, tbEmail.Text);
             repo.SaveSetting("installed", "yes");
 
             lblMsg.Text = "Settings saved.";
