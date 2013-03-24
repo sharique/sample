@@ -14,7 +14,7 @@ namespace Sample.Data
             if (!this.IsPersisted)
                 session.Save(this);
             else
-                session.SaveOrUpdateCopy(this);
+                session.Merge(this);
 
             session.Flush();
         }
